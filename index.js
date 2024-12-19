@@ -54,9 +54,9 @@ console.log(CemberinAlani(15,pi))
 		
 		
 		
-		3c. `ucetambolunenler` dizisindeki sayıların toplamını .reduce metoduyla bulup, sonucu `ucebolunenlerintoplami` değişkenine yazdırın (.reduce metodunu kullanın)
 		
-		3d. `besyuzdenkucuksayilar` adında bir dizi oluşturarak, sayilar dizisinin içindeki 500'den küçük sayıları bu diziye atayın (.filter metodunu kullanın)
+		
+		
 		
 		3e. besyuzdenkucuksayilar dizisindeki sayıları küçükten büyüğe sıralayıp `siralisayilar` adındaki bir diziye aktarın (.sort metodunu kullanın)
 		
@@ -66,13 +66,6 @@ console.log(CemberinAlani(15,pi))
 */
 
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
-
-let ucetambolunenler,
- 
-  ucebolunenlerintoplami,
-  besyuzdenkucuksayilar,
-  siralisayilar,
-  tekraredensayilar;
 
 // 3a çözümü
 
@@ -105,11 +98,13 @@ const uceBolunenlerinToplami = uceTamBolunenler.reduce((toplam,sayi)=>{
 console.log( `3'e tam bölünenlerin toplamı : ${uceBolunenlerinToplami}`)
 // 3d çözümü
 
-/* kodlar buraya */
+const besyuzdenKucukSayilar = sayilar.filter((sayi)=> sayi < 500 )
+
+console.log( `500'den küçük sayılar ${besyuzdenKucukSayilar} `)
 
 // 3e çözümü
 
-/* kodlar buraya */
+const siralisayilar
 
 // 3f çözümü
 
