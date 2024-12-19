@@ -49,8 +49,8 @@ console.log(CemberinAlani(15,pi))
 
 
 /* 	GÖREV 3:
-	- Sayfanın en üstünde global değişken olarak tanımlanmış bir sayilar dizisi bulunmaktadır. Bu dizi içinde 0 ile 1000 arasında rasgele oluşturulmuş tam sayılar ve ondalıklı sayılar bulunmaktadır. Bu diziyi kullanarak aşağıdakileri uygulayın:
-		3a. enbuyuk ve enkucuk isminde 2 adet değişken tanımlayın ve sayilar dizisindeki en küçük sayı ile en büyük sayıyı bu değişkenlere atayın. (for döngüsü kullanın)
+	
+		
 		
 		3b. `ucetambolunenler` adında bir dizi tanımlayın ve bu diziye sayilar dizisindeki 3'ün tam katı olan sayıları atayın (.forEach metodunu kullanın)
 		
@@ -68,8 +68,7 @@ console.log(CemberinAlani(15,pi))
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
 
 let ucetambolunenler,
-  enkucuk,
-  enbuyuk,
+ 
   ucebolunenlerintoplami,
   besyuzdenkucuksayilar,
   siralisayilar,
@@ -77,7 +76,14 @@ let ucetambolunenler,
 
 // 3a çözümü
 
-/* kodlar buraya */
+let enBuyuk = sayilar[0]
+let enKucuk = sayilar[0]
+for (let i = 0; i< sayilar.length; i++ ) {
+ if (sayilar[i]> enBuyuk) { enBuyuk = sayilar[i]};
+ if (sayilar[i]< enKucuk) {enKucuk = sayilar[i]}
+} 
+console.log(`En büyük sayı:${enBuyuk}`)
+console.log(`En küçük sayı:${enKucuk}`)
 
 // 3b çözümü:
 
