@@ -87,7 +87,13 @@ console.log(`En küçük sayı:${enKucuk}`)
 
 // 3b çözümü:
 
-/* kodlar buraya */
+const uceTamBolunenler  = [];
+sayilar.forEach((sayi) =>{
+  if(sayi % 3 === 0) {uceTamBolunenler.push(sayi);
+  }
+});
+
+console.log(`3'e tam bölünen sayılar: ${uceTamBolunenler}`)
 
 // 3c çözümü:
 
