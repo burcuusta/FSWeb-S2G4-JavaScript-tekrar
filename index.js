@@ -39,21 +39,14 @@ function CemberinCevresi(r) {
   return 2 * pi * r
 }
 
-/* (Oto test yok) Yukarıdaki CemberinCevresi fonksiyonunu yarıçap = 5 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
+console.log(CemberinCevresi(5))
 
-/* 	GÖREV 2:  
-- CemberinAlani fonksiyonunu kullanarak aşağıdaki yönergeleri uygulayın:
-	1. Argüman olarak çemberin yarıçapını BİRİNCİ parametre olacak alacaktır. 
-	2. Global değişken olarak verilmiş pi sayısını fonksiyonun İKİNCİ parametresi olacak alacaktır.
-	3. Çemberin alanı hesaplanacaktır (💡 İPUCU: Çemberin alanı = pi * yarıçapın karesi, yarıçapın karesini bulmak için Javascript içinde tanımlı Math kütüphanesini kullanabilirsiniz. Math.pow(yaricap,2))
-	4. Hesaplanan çemberin alanı döndürülecektir.
-*/
 
-function CemberinAlani(/* kodlar buraya */) {
-  /* kodlar buraya */
+function CemberinAlani(r, pi) {
+  return pi * Math.pow(r,2)
 }
+console.log(CemberinAlani(15,pi))
 
-/* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
 
 /* 	GÖREV 3:
 	- Sayfanın en üstünde global değişken olarak tanımlanmış bir sayilar dizisi bulunmaktadır. Bu dizi içinde 0 ile 1000 arasında rasgele oluşturulmuş tam sayılar ve ondalıklı sayılar bulunmaktadır. Bu diziyi kullanarak aşağıdakileri uygulayın:
