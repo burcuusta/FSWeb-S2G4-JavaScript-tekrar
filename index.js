@@ -48,25 +48,6 @@ function CemberinAlani(r, pi) {
 console.log(CemberinAlani(15,pi))
 
 
-/* 	GÖREV 3:
-	
-		
-		
-		
-		
-		
-		
-		
-		
-		3e. besyuzdenkucuksayilar dizisindeki sayıları küçükten büyüğe sıralayıp `siralisayilar` adındaki bir diziye aktarın (.sort metodunu kullanın)
-		
-		3f. `tekraredensayilar` adında bir dizi oluşturun. sayilar dizisi içerisindeki bazı sayılar birden fazla kere yazılmış. sayilar dizisi içerisinde birden fazla kez yazılmış sayıları tespit ederek kaç kere tekrar edildiğini belirten bir string oluşturulup `tekraredensayilar` dizisine aktarılmasını istiyoruz. Örnek string: "{sayı} sayısı {tekrarSayisi} kere tekrar edilmiştir"
-		ÖRNEK: sayilar dizisi içerisinde 45 sayısı 3 kere yazılmış. "45 sayısı 3 tekrar edilmiştir" stringini `tekraredensayilar` dizisine aktaracağız.
-		💡 İPUCU: Tekrar edilen sayıları ve kaç kere tekrar edildiğini kaydetmek için bir nesne tanımlamalısınız, bu görevi yapabilmek için en az 2 kere döngü yazmalısınız. Birinci döngüde hangi sayının kaç kere tekrar edildiğini tespit edip, 2. döngüde stringi oluşturup verilen diziye aktarmalısınız.
-*/
-
-/*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
-
 // 3a çözümü
 
 let enBuyuk = sayilar[0]
@@ -104,11 +85,29 @@ console.log( `500'den küçük sayılar ${besyuzdenKucukSayilar} `)
 
 // 3e çözümü
 
-const siralisayilar
+const siralisayilar = sayilar.sort((a,b)=> a-b)
+
+console.log(`sayıların küçükten büyüğe sıralaması: ${siralisayilar} şeklindedir.`)
 
 // 3f çözümü
 
-/* kodlar buraya */
+const tekrar = {}
+sayilar.forEach((sayi) => {
+  tekrar[sayi] = (tekrar[sayi] || 0) + 1
+});
+const tekrarEdenSayilar = [];
+for (const sayi in tekrar) {
+  if (tekrar[sayi] > 1) {
+    const tekrarSayisi = tekrar[sayi]
+    const mesaj = `${sayi}, ${tekrarSayisi} kere tekrar edilmiştir.`
+    tekrarEdenSayilar.push(mesaj) 
+  }
+}
+
+console.log(tekrarEdenSayilar)
+
+const kaçSayiVar = sayilar.length
+console.log( kaçSayiVar)
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
