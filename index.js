@@ -52,7 +52,7 @@ console.log(CemberinAlani(15,pi))
 	
 		
 		
-		3b. `ucetambolunenler` adında bir dizi tanımlayın ve bu diziye sayilar dizisindeki 3'ün tam katı olan sayıları atayın (.forEach metodunu kullanın)
+		
 		
 		3c. `ucetambolunenler` dizisindeki sayıların toplamını .reduce metoduyla bulup, sonucu `ucebolunenlerintoplami` değişkenine yazdırın (.reduce metodunu kullanın)
 		
@@ -82,6 +82,7 @@ for (let i = 0; i< sayilar.length; i++ ) {
  if (sayilar[i]> enBuyuk) { enBuyuk = sayilar[i]};
  if (sayilar[i]< enKucuk) {enKucuk = sayilar[i]}
 } 
+
 console.log(`En büyük sayı:${enBuyuk}`)
 console.log(`En küçük sayı:${enKucuk}`)
 
@@ -97,8 +98,11 @@ console.log(`3'e tam bölünen sayılar: ${uceTamBolunenler}`)
 
 // 3c çözümü:
 
-/* kodlar buraya */
+const uceBolunenlerinToplami = uceTamBolunenler.reduce((toplam,sayi)=>{
+  return toplam + sayi
+},0 )
 
+console.log( `3'e tam bölünenlerin toplamı : ${uceBolunenlerinToplami}`)
 // 3d çözümü
 
 /* kodlar buraya */
